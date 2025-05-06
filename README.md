@@ -17,7 +17,7 @@
 
 ツール`read_ch32v003_guide_book`を提供します。
 
-引数のframeworkとitemを指定することで、同人誌のコンテンツと、サンプルコードをMCP Serverに与えます。
+引数のframeworkとitemを指定することで、同人誌のコンテンツと、サンプルコードをMCP Serverが返します。
 
 - framework:
   - WCH SDK
