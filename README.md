@@ -29,7 +29,83 @@ frameworkを指定する必要があるため、LLMにframeworkを指示して�
 
 ## 利用方法
 
-リリースページからダウンロードしてください。
+[リリースページ](https://github.com/74th/ch32v003-guidebook-mcpserver/releases)からダウンロードして、PC内に設置してください。
+
+### VS Codeで、GitHub Copilotを利用する場合
+
+#### MCP Serverの有効化
+
+VS Codeで拡張機能GitHub Copilotをインストールしてください。
+
+リポジトリにて`.vscode/mcp.json`を編集、もしくは作成して、以下のように、設置したMCP Serverのパスを指定してください。
+
+```json
+{
+	"servers": {
+		"guidebook": {
+			"command": "/Users/nnyn/ghq/github.com/74th/ch32v003-guidebook-mcpserver/ch32v003-guidebook-mcpserver",
+			"args": [],
+			"env": {}
+		}
+	}
+}
+```
+
+以下のように、GitHub Copilot Chatを開き、Agent Modeを選択した上で、Toolを有効化してください。
+
+![enable copilot](./docs/using_mcp_server_with_github_copilot.drawio.svg)
+
+Toolに表示されない場合、MCP Serverの再起動も試みてください。
+
+Chatのプロンプトにて、以下のようにTool`read_ch32v003_guide_book`を使うように指示して利用してください。
+この時フレームワーク名を`WCH SDK`か`ch32fun`を教えておく必要があります。
+以下はプロンプトの例です。
+
+```
+CH32V003マイコンのファームウェアの開発です
+フレームワークはch32funを使います
+ch32funでの実装方法は、Tool read_ch32v003_guide_bookを参照してください。
+
+UARTを使う準備をして。ボーレート 115200で1バイト読み書きするコードも用意して。
+```
+
+#### MCP ServerをGitHub Copilotに使わせるようにカスタムプロンプトの指定
+
+毎回Toolを指定する指示をしなくても、自動でプロンプトに追加できます。
+
+リポジトリにて`.vscode/settings.json`を編集、もしくは作成して、`"chat.promptFiles": true`を追加してください。
+
+```json
+{
+  "chat.promptFiles": true
+}
+```
+
+`.github/copilot-instructions.md`に以下のように記述してください。
+
+```markdown
+CH32V003マイコンのファームウェアの開発です
+フレームワークはch32funを使います
+ch32funでの実装方法は、Tool read_ch32v003_guide_bookを参照してください。
+```
+
+### サンプルのプロジェクトファイル
+
+サンプルのプロジェクトフォルダを用意してあります。
+
+#### ch32fun
+
+[./sample_project_directory/ch32fun](./sample_project_directory/ch32fun/)
+
+ch32fun/examples/templateに上記設定を追加したものです。
+
+Makefile、.vscode/c_cpp_properties.json、.vscode/mcp.json中の、ch32fun及びch32v003-guidebook-mcpserverのパスを書き換えて利用してください。
+
+## 生成サンプル
+
+プロンプトのサンプル例です。
+
+[./example_prompt.md](./example_prompt.md)
 
 ## ご注意
 

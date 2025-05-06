@@ -1,0 +1,17 @@
+{
+    "clangd.arguments": ["--compile-commands-dir=."],
+    "cmake.configureOnOpen": false,
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "",
+            "sbinaryPath": "template.elf",
+            "binaryArgs": []
+        }
+    ],
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4,
+    "files.associations": {
+        "*.h": "c"
+    },
+    "chat.promptFiles": true
+}
