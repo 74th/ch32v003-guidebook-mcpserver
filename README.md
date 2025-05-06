@@ -2,6 +2,8 @@
 
 @74th が執筆した技術同人誌『CH32V003 Guidebook』を利用したCH32V003ファームウェア開発用のMCP Serverプログラムです。
 
+<img src="./docs/toppage.png" width="400px" alt="CH32V003 Guidebook" />
+
 技術同人誌は、2025年5月31日スタートの技術書典18にて頒布します！
 
 > CH32V003開発ガイドブック：74th
