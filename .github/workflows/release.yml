@@ -17,9 +17,9 @@ jobs:
         id: generate-token
         uses: actions/create-github-app-token@v1
         with:
-        app-id: "1242610"
-        private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
-        owner: 74th
+          app-id: "1242610"
+          private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
+          owner: 74th
       - name: Checkout repository with submodules
         uses: actions/checkout@v4
         with:
