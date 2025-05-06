@@ -1,9 +1,6 @@
 [submodule "documents"]
 	path = documents
 	url = git://github.com/74th/ch32v003-guidebook-mcpserver-documents.git
-[submodule "origin_documents"]
-	path = origin_documents
-	url = git://github.com/74th/ch32v003-book.git
 [submodule "sample_codes"]
 	path = sample_codes
 	url = https://github.com/74th/ch32v003-book-code.git
