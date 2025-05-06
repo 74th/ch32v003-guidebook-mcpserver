@@ -13,11 +13,19 @@ jobs:
         goos: [linux, windows, darwin]
         goarch: [amd64, arm64]
     steps:
+      - name: Generate a GitHub App install access token
+        id: generate-token
+        uses: actions/create-github-app-token@v1
+        with:
+        app-id: "1242610"
+        private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
+        owner: 74th
       - name: Checkout repository with submodules
         uses: actions/checkout@v4
         with:
-          submodules: true
-          ssh-key: ${{ secrets.SUBMODULE_DEPLOY_KEY }}
+          token: ${{ steps.generate-token.outputs.token }}
+          submodules: recursive
+          persist-credentials: false
       - uses: wangyoucao577/go-release-action@v1
         with:
           github_token: ${{ secrets.TOKEN }}
