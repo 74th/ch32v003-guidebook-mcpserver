@@ -1,0 +1,126 @@
+common_documents:
+  ch32fun: documents/ch32fun/main.md
+  wchsdk: documents/wchsdk/main.md
+documents:
+  - name: ADC
+    md_file_name: adc.md
+    code:
+      ch32fun:
+        - desctiption: ch32funマクロを使った方法
+          file: sample_codes/adc-ch32fun/main.c
+        - description: DMAを使い、レジスタ操作する方法
+          file: sample_codes/adc_dma-register/main.c
+      wchsdk:
+        - description: WCH SDKを使った方法
+          file: sample_codes/adc-wch_sdk/src/main.c
+        - description: DMAを使い、WCH SDKでの方法
+          file: sample_codes/adc_dma-wch_sdk/src/main.c
+  - name: DMA
+    md_file_name: dma.md
+    code:
+      ch32fun:
+        - description: ""
+          file: sample_codes/timer_dma-register/main.c
+      wchsdk:
+        - description: ""
+          file: sample_codes/timer_dma-wch_sdk/src/main.c
+  - name: GPIO
+    md_file_name: gpio.md
+    code:
+      ch32fun:
+        - description: ch32funマクロを使った方法
+          file: sample_codes/blink_and_read-ch32fun/main.c
+        - description: レジスタ操作の方法
+          file: sample_codes/blink_and_read-register/main.c
+      wchsdk:
+        - description: ""
+          file: sample_codes/blink_and_read-wch_sdk/src/main.c
+  - name: I2C
+    md_file_name: i2c.md
+    code:
+      ch32fun:
+        - description: I2C Master
+          file: sample_codes/i2c_master-register/main.c
+        - description: i2c_slave.hを使ったI2C Slave
+          file: sample_codes/i2c_slave-ch32fun/main.c
+        - description: レジスタ操作によるI2C Slave
+          file: sample_codes/i2c_slave-register/main.c
+      wchsdk:
+        - description: I2C Master実装
+          file: sample_codes/i2c_master-wch_sdk/src/main.c
+        - description: I2C Slave実装
+          file: sample_codes/i2c_slave-wch_sdk/src/main.c
+  - name: neopixel
+    md_file_name: neopixel.md
+    code:
+      ch32fun:
+        - description: extralibsを使った方法
+          file: sample_codes/neopixel-ch32fun/main.c
+        - description: レジスタ操作の方法
+          file: sample_codes/neopixel-register/main.c
+      wchsdk: []
+  - name: OLED
+    md_file_name: oled.md
+    code:
+      ch32fun:
+        - description: ""
+          file: sample_codes/i2c_oled-ch32fun/main.c
+      wchsdk: []
+  - name: PWM
+    md_file_name: pwm.md
+    code:
+      ch32fun:
+        - description: ch32funマクロを使った方法
+          file: sample_codes/pwm-wch_sdk/src/main.c
+        - description: レジスタ操作の方法
+          file: sample_codes/pwm-register/main.c
+      wchsdk:
+        - description: ""
+          file: sample_codes/pwm-wch_sdk/src/main.c
+  - name: SleepStanby
+    md_file_name: sleep_standby.md
+    code:
+      ch32fun:
+        - description: ""
+          file: sample_codes/standby_mode_blink-register/main.c
+      wchsdk:
+        - description: ""
+          file: sample_codes/standby_mode_blink-wch_sdk/src/main.c
+  - name: SPI
+    md_file_name: spi.md
+    code:
+      ch32fun:
+        - description: extralibsを使った方法
+          file: sample_codes/spi_master-ch32fun/main.c
+        - description: レジスタ操作の方法
+          file: sample_codes/spi_master-register/main.c
+      wchsdk:
+        - description: ""
+          file: sample_codes/spi_master-wch_sdk/src/main.c
+  - name: Timer
+    md_file_name: timer.md
+    code:
+      ch32fun:
+        - description: ""
+          file: sample_codes/timer_blink-register/main.c
+      wchsdk:
+        - description: ""
+          file: sample_codes/timer_blink-wch_sdk/src/main.c
+  - name: UART
+    md_file_name: uart.md
+    code:
+      ch32fun:
+        - description: ""
+          file: sample_codes/uart-register/main.c
+      wchsdk:
+        - description: ""
+          file: sample_codes/uart-wch_sdk/src/main.c
+  - name: watchdogtimer
+    md_file_name: watchdogtimer.md
+    code:
+      ch32fun:
+        - description: ""
+          file: sample_codes/watchdogtimer-register/main.c
+      wchsdk:
+        - description: ""
+          file: sample_codes/watchdogtimer-wch_sdk/src/main.c

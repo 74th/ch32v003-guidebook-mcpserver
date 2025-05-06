@@ -1,0 +1,72 @@
+MCP Server ― LICENSE
+====================
+
+この配布物には 3 種類の著作物が含まれます。
+
+ A. 「ソフトウェア部分」 … 本リポジトリに含まれる内容
+ B. 「同人誌コンテンツ部分」 …… プログラム内部に格納された、また同人誌購入者向けに提供される
+                           技術同人誌本文リソース
+ C. 「サンプルコード部分」 …… プログラム内部に格納された、または公開されているサンプルコード
+
+Aには、SECTION IのMITライセンスが適用されます。
+Bには、SECTION IIの@74th Personal-Use Licenseが適用されます。
+Cには、CC0ライセンスが適用されます。
+
+──────────────────────────────────────────────
+SECTION I — MIT License for the SOFTWARE part
+──────────────────────────────────────────────
+Copyright (c) 2025 Atsushi Morimoto(@74th)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+──────────────────────────────────────────────
+SECTION II — @74th CH32V003 Guidebook MCP Server
+Personal-Use License for the MAGAZINE CONTENT part
+──────────────────────────────────────────────
+Copyright (c) 2025 Atsushi Morimoto (@74th)
+All rights reserved.
+
+1. 目的
+   本ライセンスは、個人が CH32V003 向けファームウェアを開発する際に、
+   MCP Server を通じて本コンテンツを閲覧・利用できるようにすること
+   を目的とします。
+
+2. 許諾される権利
+   - (a) **私的利用**
+     個人が MCP Server を通じて本コンテンツを利用すること。
+   - (b) **再配布**
+     改変・無改変を問わず、本ソフトウェアを第三者に配布する場合は
+     「同人誌コンテンツ部分」を**一切改変せずそのまま同梱**してください。
+     （コンテンツを削除した場合、ソフトウェア部分のみ MIT で再配布可能です）
+
+3. 禁止事項
+   - (a) 本コンテンツの全文または一部を抽出し、個人以外に
+         開示・公開・転載・再配布・販売・二次配布する行為
+   - (b) 本コンテンツを含む MCP Server を他ソフトウェアやオンラインサービス等に組み込み、
+         第三者が本コンテンツへアクセスできる形で提供・頒布・運用する行為
+   - (c) 本コンテンツに基づく派生著作物を作成し頒布する行為
+
+4. 免責
+   本コンテンツは現状有姿で提供されるものとし、著作権者は
+   その内容の正確性・完全性について一切責任を負いません。
+   いかなる場合も、著作権者は本コンテンツの利用または
+   利用不能から生じる一切の損害について責任を負いません。
+
+5. 準拠法
+   本ライセンスは日本国法に準拠し、同法に従って解釈されます。
