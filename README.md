@@ -1,5 +1,6 @@
 # CH32V003 Guidebook MCP Server
 
+🇯🇵
 CH32V003 ガイドブック MCP サーバー
 
 This MCP Server helps develop CH32V003 firmware using the "CH32V003 Guidebook" written by @74th.
@@ -9,7 +10,7 @@ This MCP Server helps develop CH32V003 firmware using the "CH32V003 Guidebook" w
 
 <img src="./docs/toppage.png" width="400px" alt="CH32V003 Guidebook" />
 
-The guidebook will be available at Technical Book Event 18 starting May 31, 2025!
+The guidebook will be available at Gijutsushoten18 (Japan’s largest indie tech-book fair) starting May 31, 2025!
 
 🇯🇵
 技術同人誌は、2025年5月31日スタートの技術書典18にて頒布します！
