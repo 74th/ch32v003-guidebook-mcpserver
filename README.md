@@ -32,7 +32,9 @@ The MCP Server containing the guidebook content is distributed as free software.
 技術同人誌の内容を含むMCP Serverを、フリーソフトウェアとして配布しています。
 
 ## Overview
-## 概要
+
+🇯🇵
+概要
 
 The tool `read_ch32v003_guide_book` is provided.
 By specifying the framework and item arguments, the MCP Server returns relevant book content and sample code.
