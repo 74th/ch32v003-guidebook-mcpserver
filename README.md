@@ -15,6 +15,10 @@ The guidebook will be available at Gijutsushoten18 (Japan’s largest indie tech
 🇯🇵
 技術同人誌は、2025年5月31日スタートの技術書典18にて頒布します！
 
+> CH32V003開発ガイドブック — スイッチサイエンス
+>
+> [https://www.switch-science.com/products/10547](https://www.switch-science.com/products/10547)
+
 > CH32V003開発ガイドブック[74TH-B018] - 74th Books & Gadgets - BOOTH
 >
 > https://74th.booth.pm/items/6934072
